@@ -1,0 +1,6 @@
+{
+  "name": "Xtreme Muscle Gym & Physical Fitness",
+  "description": "Official website for Xtreme Muscle Gym N Physical Fitness in Balkot, Bhaktapur, Nepal. Explore training facilities, membership plans, and get in touch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
