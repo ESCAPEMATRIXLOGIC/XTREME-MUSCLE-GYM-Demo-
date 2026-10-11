@@ -3,7 +3,8 @@ import { Menu, X, Dumbbell, ArrowRight } from 'lucide-react';
 import { GYM_CONFIG } from '../data/gymConfig';
 
 interface HeaderProps {
-  onOpenInquiry: (planName?: string) => void;
+  onOpenInquiry?: (planName?: string) => void;
+  onJoinGym?: () => void;
 }
 
 const NAV_ITEMS = [
@@ -16,10 +17,18 @@ const NAV_ITEMS = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export const Header: React.FC<HeaderProps> = ({ onOpenInquiry }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onJoinGym }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+
+  const handleJoinClick = () => {
+    if (onJoinGym) {
+      onJoinGym();
+    } else if (onOpenInquiry) {
+      onOpenInquiry();
+    }
+  };
 
   // Track active section and scroll state
   useEffect(() => {
@@ -140,7 +149,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry }) => {
             <div className="flex items-center gap-3 shrink-0">
               <button
                 type="button"
-                onClick={() => onOpenInquiry()}
+                onClick={handleJoinClick}
                 className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-xs md:text-sm font-semibold text-white bg-[#dc2626] hover:bg-[#b91c1c] active:bg-[#991b1b] rounded-md transition-all shadow-md shadow-red-900/30 whitespace-nowrap cursor-pointer"
               >
                 <span>Join the Gym</span>
@@ -223,9 +232,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry }) => {
                 type="button"
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  onOpenInquiry();
+                  handleJoinClick();
                 }}
-                className="w-full py-3 px-4 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold text-center rounded-md shadow-md shadow-red-900/30 flex items-center justify-center gap-2"
+                className="w-full py-3 px-4 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-semibold text-center rounded-md shadow-md shadow-red-900/30 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Join the Gym</span>
                 <ArrowRight className="w-4 h-4" />

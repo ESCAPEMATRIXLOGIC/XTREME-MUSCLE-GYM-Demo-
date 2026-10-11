@@ -16,6 +16,7 @@ import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
 import { InquiryModal } from './components/InquiryModal';
 import { PhotoSpecsModal } from './components/PhotoSpecsModal';
+import { JoinGymSection } from './components/JoinGymSection';
 import { MembershipPlan } from './data/gymConfig';
 
 export default function App() {
@@ -49,7 +50,10 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0b0c0e] text-[#e2e4e9] flex flex-col font-sans selection:bg-[#dc2626] selection:text-white">
       {/* Header */}
-      <Header onOpenInquiry={() => handleOpenInquiry('General Membership')} />
+      <Header
+        onOpenInquiry={() => handleOpenInquiry('General Membership')}
+        onJoinGym={() => scrollTo('join')}
+      />
 
       {/* Main Content */}
       <main className="flex-grow">
@@ -65,6 +69,9 @@ export default function App() {
         <Trainers onInquire={(subject) => handleOpenInquiry(subject || 'Personal Coaching')} />
 
         <Membership onSelectPlan={handleSelectPlan} />
+
+        {/* Simplified frontend-only Join the Gym CTA section */}
+        <JoinGymSection />
 
         <Gallery />
 
