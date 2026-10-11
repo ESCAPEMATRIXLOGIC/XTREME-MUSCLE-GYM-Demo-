@@ -3,11 +3,11 @@
  * Balkot, Bhaktapur, Nepal
  */
 
-import heroImg from '../assets/images/hero_gym_strength_1791636335764.jpg';
-import aboutImg from '../assets/images/about_gym_training_1791636348463.jpg';
-import strengthImg from '../assets/images/facility_strength_zone_1791636360177.jpg';
-import cardioImg from '../assets/images/facility_cardio_zone_1791636370981.jpg';
-import functionalImg from '../assets/images/facility_functional_turf_1791636383291.jpg';
+import gymFloorImg from '../assets/images/gym_interior_floor_1791724114357.jpg';
+import barbellStationImg from '../assets/images/gym_barbell_station_1791724130411.jpg';
+import powerCagesImg from '../assets/images/gym_power_cages_1791724158530.jpg';
+import dumbbellRackImg from '../assets/images/gym_dumbbell_racks_1791724144488.jpg';
+import cardioTreadmillsImg from '../assets/images/gym_cardio_treadmills_1791724175270.jpg';
 
 export interface BusinessConfig {
   brandName: string;
@@ -89,50 +89,50 @@ export const FACILITIES: FacilityItem[] = [
     title: 'Heavy Strength & Power Cages',
     category: 'strength',
     categoryLabel: 'Strength Training',
-    description: 'High-grade Olympic barbells, calibrated steel & bumper plates, and rigid squat racks built for serious lifting.',
-    features: ['Olympic Barbells', 'Reinforced Power Racks', 'Deadlift Platforms'],
-    image: strengthImg,
-    alt: 'Strength training power cages and barbells in clean dark lighting',
+    description: 'Yellow and black steel power cages, squat racks, and calibrated Olympic barbells engineered for heavy compound lifts.',
+    features: ['Olympic Barbells', 'Heavy Duty Power Cages', 'Calibrated Iron Plates'],
+    image: powerCagesImg,
+    alt: 'Heavy yellow steel power cages and squat racks in empty gym floor with blue mats',
   },
   {
     id: 'free-weights',
     title: 'Dumbbell & Free Weight Floor',
     category: 'free-weights',
     categoryLabel: 'Free Weights',
-    description: 'Comprehensive dumbbell lineup with ergonomic grip knurling, adjustable benches, and cable crossover stations.',
-    features: ['High-Range Dumbbells', 'Incline & Flat Benches', 'Cable Towers'],
-    image: aboutImg,
-    alt: 'Free weight training zone with dumbbells and lifting benches',
+    description: 'Comprehensive dumbbell lineup on heavy steel racks, flat and incline adjustable benches, and full-length mirror wall.',
+    features: ['Matched Dumbbell Pairs', 'Incline & Flat Benches', 'Mirror Lifting Zone'],
+    image: dumbbellRackImg,
+    alt: 'Two-tier steel rack of black iron dumbbells and workout benches in empty gym',
   },
   {
     id: 'cardio-conditioning',
     title: 'Cardio & Endurance Suite',
     category: 'cardio',
     categoryLabel: 'Cardio & Stamina',
-    description: 'Motorized and manual sprint treadmills, rowing machines, and spin bikes to build cardiovascular capacity.',
-    features: ['Commercial Treadmills', 'Rowing Ergometers', 'Heart-Rate Trackers'],
-    image: cardioImg,
-    alt: 'Cardio treadmills and conditioning equipment in sleek athletic space',
+    description: 'Commercial running treadmills and stationary spin bikes for warm-ups, endurance building, and conditioning.',
+    features: ['Commercial Treadmills', 'Spin Exercise Bikes', 'Endurance Station'],
+    image: cardioTreadmillsImg,
+    alt: 'Row of modern treadmills and exercise spin bikes in clean empty fitness room',
   },
   {
     id: 'functional-turf',
-    title: 'Functional Turf & Calisthenics',
+    title: 'Functional Barbell & Lifting Stations',
     category: 'functional',
     categoryLabel: 'Functional Training',
-    description: 'High-density sprint turf track, heavy kettlebells, plyometric boxes, battle ropes, and pull-up rig stations.',
-    features: ['Sprint Sled Track', 'Cast Iron Kettlebells', 'Multi-Grip Pull-Up Rig'],
-    image: functionalImg,
-    alt: 'Functional turf zone with kettlebells and athletic conditioning track',
+    description: 'Independent barbell stations with yellow uprights, chalk stations, and blue rubber floor for deadlifts and presses.',
+    features: ['Barbell Platform', 'Cast Iron Plates', 'Chalk Station'],
+    image: barbellStationImg,
+    alt: 'Barbell lifting station with black iron plates and chalk block on blue rubber floor',
   },
   {
     id: 'personal-coaching',
-    title: 'Guided Technique & Coaching Zone',
+    title: 'Main Workout Floor & Training Layout',
     category: 'personal-training',
     categoryLabel: 'Personal Training',
-    description: 'Dedicated consultation and movement correction space for personalized workout plans and posture evaluation.',
-    features: ['Form Assessment', 'Custom Workout Splits', 'Progressive Overload Tracking'],
-    image: heroImg,
-    alt: 'Athletic guidance and personal training coaching floor',
+    description: 'Spacious gym layout with yellow benches, cable stations, and comprehensive equipment for structured workout splits.',
+    features: ['Spacious Floor Layout', 'Cable Machine Stations', 'Dedicated Coaching Area'],
+    image: gymFloorImg,
+    alt: 'Spacious empty gym interior with yellow benches, racks, blue floor, and mirror walls',
   },
 ];
 
@@ -238,48 +238,48 @@ export interface GalleryItem {
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'gal-1',
-    title: 'Lifting Platform & Heavy Squat Rack',
+    title: 'Main Workout Floor & Lifting Stations',
     category: 'strength',
-    categoryLabel: 'Strength Zone',
-    image: heroImg,
-    alt: 'Athlete squatting with barbell inside iron gym cage',
-    caption: 'Built for progressive barbell lifts and safe heavy training.',
+    categoryLabel: 'Workout Floor',
+    image: gymFloorImg,
+    alt: 'Empty workout floor with yellow lifting benches and blue flooring',
+    caption: 'Equipped with heavy-duty benches, Olympic barbells, and full-length mirrors.',
   },
   {
     id: 'gal-2',
-    title: 'Deadlift & Barbell Mastery',
+    title: 'Barbell Uprights & Plate Station',
     category: 'strength',
     categoryLabel: 'Strength Zone',
-    image: aboutImg,
-    alt: 'Chalked barbell deadlift in industrial fitness club',
-    caption: 'Calibrated plates and solid platforms for power and control.',
+    image: barbellStationImg,
+    alt: 'Yellow barbell station loaded with black Olympic plates in empty gym',
+    caption: 'Solid barbell station and chalk stand for compound power movements.',
   },
   {
     id: 'gal-3',
-    title: 'Free Weight Racks & Dumbbell Stations',
+    title: 'Dumbbell Racks & Free Weights Zone',
     category: 'strength',
     categoryLabel: 'Free Weights',
-    image: strengthImg,
-    alt: 'Neat rows of dumbbells and clean workout benches',
-    caption: 'Comprehensive dumbbell pairs for targeted muscle hypertrophy.',
+    image: dumbbellRackImg,
+    alt: 'Two-tier dumbbell rack holding pairs of dumbbells with workout benches',
+    caption: 'Comprehensive dumbbell pairs arranged by weight for targeted hypertrophy.',
   },
   {
     id: 'gal-4',
-    title: 'Cardiovascular Training Row',
-    category: 'cardio',
-    categoryLabel: 'Cardio Suite',
-    image: cardioImg,
-    alt: 'Precision treadmills and sprint runners with red lighting',
-    caption: 'Modern aerobic machines for conditioning and endurance.',
+    title: 'Yellow Power Cages & Squat Racks',
+    category: 'functional',
+    categoryLabel: 'Power Cages',
+    image: powerCagesImg,
+    alt: 'Heavy yellow steel power cages and squat racks in empty gym with blue floor',
+    caption: 'Rigid steel power cages with pull-up bars and weight horn storage.',
   },
   {
     id: 'gal-5',
-    title: 'Athletic Conditioning & Turf Area',
-    category: 'functional',
-    categoryLabel: 'Functional Turf',
-    image: functionalImg,
-    alt: 'Functional training area with black turf, kettlebells, and pull-up rig',
-    caption: 'Multi-discipline zone for calisthenics, kettlebell circuits, and speed work.',
+    title: 'Cardiovascular Training Deck',
+    category: 'cardio',
+    categoryLabel: 'Cardio Suite',
+    image: cardioTreadmillsImg,
+    alt: 'Line of commercial treadmills and exercise spin bikes in clean gym',
+    caption: 'Running treadmills and stationary spin bikes for aerobic capacity and stamina.',
   },
 ];
 

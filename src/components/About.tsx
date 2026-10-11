@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Dumbbell, Activity, Compass, CheckCircle2 } from 'lucide-react';
-import aboutImg from '../assets/images/about_gym_training_1791636348463.jpg';
+import { Dumbbell, Activity, Compass } from 'lucide-react';
+import barbellStationImg from '../assets/images/gym_barbell_station_1791724130411.jpg';
 
 export const About: React.FC = () => {
   const [imgError, setImgError] = useState(false);
@@ -32,8 +32,8 @@ export const About: React.FC = () => {
             <div className="relative rounded-xl overflow-hidden border border-[#242834] bg-[#141720] shadow-xl">
               {!imgError ? (
                 <img
-                  src={aboutImg}
-                  alt="Barbell deadlift training and focused power mechanics"
+                  src={barbellStationImg}
+                  alt="Barbell lifting station with yellow steel uprights, Olympic barbell, and plates in empty gym"
                   className="w-full h-[360px] sm:h-[440px] object-cover object-center filter contrast-105"
                   onError={() => setImgError(true)}
                   loading="lazy"

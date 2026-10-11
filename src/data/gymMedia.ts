@@ -2,17 +2,14 @@
  * Xtreme Muscle Gym N Physical Fitness - Media Manifest & Asset Slots
  * Balkot, Bhaktapur, Nepal
  * 
- * This module defines every visual media slot across the website.
- * When authentic photos are taken at the gym (or supplied by the owner),
- * simply replace the referenced files in /src/assets/images/ or update
- * the image paths below.
+ * Empty Gym Equipment Photography (Zero People)
  */
 
-import heroImg from '../assets/images/hero_gym_strength_1791636335764.jpg';
-import aboutImg from '../assets/images/about_gym_training_1791636348463.jpg';
-import strengthImg from '../assets/images/facility_strength_zone_1791636360177.jpg';
-import cardioImg from '../assets/images/facility_cardio_zone_1791636370981.jpg';
-import functionalImg from '../assets/images/facility_functional_turf_1791636383291.jpg';
+import gymFloorImg from '../assets/images/gym_interior_floor_1791724114357.jpg';
+import barbellStationImg from '../assets/images/gym_barbell_station_1791724130411.jpg';
+import powerCagesImg from '../assets/images/gym_power_cages_1791724158530.jpg';
+import dumbbellRackImg from '../assets/images/gym_dumbbell_racks_1791724144488.jpg';
+import cardioTreadmillsImg from '../assets/images/gym_cardio_treadmills_1791724175270.jpg';
 
 export interface MediaSlot {
   slotId: string;
@@ -30,78 +27,78 @@ export const MEDIA_MANIFEST: Record<string, MediaSlot> = {
   hero: {
     slotId: 'hero',
     section: 'hero',
-    title: 'Homepage Hero Spotlight',
-    recommendedSubject: 'Panoramic or wide view of the main workout floor, high-contrast lifting area, or prominent gym sign in Balkot.',
+    title: 'Main Workout Floor & Lifting Stations',
+    recommendedSubject: 'Wide-angle view of the empty workout floor with yellow lifting benches, barbells, and blue floor.',
     recommendedAspect: '16:9',
     recommendedResolution: '1920 × 1080 px or 1600 × 1200 px',
-    currentAsset: heroImg,
-    altText: 'Athlete performing barbell strength workout inside modern gym',
-    targetFilename: 'hero_balkot_gym.jpg',
+    currentAsset: gymFloorImg,
+    altText: 'Empty workout floor with yellow lifting benches and blue flooring in gym',
+    targetFilename: 'gym_interior_floor.jpg',
   },
   about: {
     slotId: 'about',
     section: 'about',
-    title: 'About Section Training Floor',
-    recommendedSubject: 'Close-up or medium shot of barbells, knurled plates, deadlift platforms, or focused training in the gym.',
+    title: 'Heavy Barbell Station & Squat Uprights',
+    recommendedSubject: 'Barbell loaded with Olympic iron plates on yellow uprights with chalk box in empty gym.',
     recommendedAspect: '4:3',
     recommendedResolution: '1200 × 900 px',
-    currentAsset: aboutImg,
-    altText: 'Chalked hands and barbell deadlift on heavy lifting platform',
-    targetFilename: 'about_balkot_lifting.jpg',
+    currentAsset: barbellStationImg,
+    altText: 'Yellow barbell station loaded with black Olympic plates in empty gym',
+    targetFilename: 'gym_barbell_station.jpg',
   },
   facilityStrength: {
     slotId: 'facilityStrength',
     section: 'facility',
     title: 'Heavy Strength & Power Cages',
-    recommendedSubject: 'Actual squat racks, power cages, bench presses, and Olympic barbell stations at the Balkot facility.',
+    recommendedSubject: 'Yellow and black steel power cages, squat racks, and calibrated Olympic barbells.',
     recommendedAspect: '4:3',
     recommendedResolution: '1200 × 900 px',
-    currentAsset: strengthImg,
-    altText: 'Power cages, Olympic barbells, and calibrated weight plates on rubber gym flooring',
-    targetFilename: 'facility_strength_racks.jpg',
+    currentAsset: powerCagesImg,
+    altText: 'Heavy yellow steel power cages and squat racks in empty gym floor with blue mats',
+    targetFilename: 'gym_power_cages.jpg',
   },
   facilityFreeWeights: {
     slotId: 'facilityFreeWeights',
     section: 'facility',
     title: 'Dumbbell & Free Weight Floor',
-    recommendedSubject: 'The gym dumbbell rack lined up by weight pairs, flat and incline benches, and cable equipment.',
+    recommendedSubject: 'Matched dumbbell pairs on two-tier steel rack, flat and incline benches, and mirror wall.',
     recommendedAspect: '4:3',
     recommendedResolution: '1200 × 900 px',
-    currentAsset: aboutImg,
-    altText: 'Free weight training benches and dumbbell floor area',
-    targetFilename: 'facility_dumbbell_rack.jpg',
+    currentAsset: dumbbellRackImg,
+    altText: 'Two-tier steel rack of black iron dumbbells and workout benches in empty gym',
+    targetFilename: 'gym_dumbbell_racks.jpg',
   },
   facilityCardio: {
     slotId: 'facilityCardio',
     section: 'facility',
     title: 'Cardio & Conditioning Suite',
-    recommendedSubject: 'Treadmills, elliptical cross-trainers, rowing machines, or spin bikes at the gym.',
+    recommendedSubject: 'Commercial running treadmills and stationary exercise spin bikes lined up in clean empty gym.',
     recommendedAspect: '4:3',
     recommendedResolution: '1200 × 900 px',
-    currentAsset: cardioImg,
-    altText: 'Row of motorized treadmills and endurance machines in atmospheric gym lighting',
-    targetFilename: 'facility_cardio_floor.jpg',
+    currentAsset: cardioTreadmillsImg,
+    altText: 'Row of modern treadmills and exercise spin bikes in clean empty fitness room',
+    targetFilename: 'gym_cardio_treadmills.jpg',
   },
   facilityFunctional: {
     slotId: 'facilityFunctional',
     section: 'facility',
-    title: 'Functional Turf & Calisthenics',
-    recommendedSubject: 'Functional training area, kettlebell lineup, pull-up rig, plyometric boxes, or stretching area.',
+    title: 'Functional Barbell & Lifting Stations',
+    recommendedSubject: 'Barbell lifting stations with yellow uprights, chalk stations, and blue rubber floor.',
     recommendedAspect: '4:3',
     recommendedResolution: '1200 × 900 px',
-    currentAsset: functionalImg,
-    altText: 'Functional conditioning area with turf track, kettlebells, and pull-up rig',
-    targetFilename: 'facility_functional_turf.jpg',
+    currentAsset: barbellStationImg,
+    altText: 'Barbell lifting station with black iron plates and chalk block on blue rubber floor',
+    targetFilename: 'gym_barbell_station.jpg',
   },
   facilityCoaching: {
     slotId: 'facilityCoaching',
     section: 'facility',
-    title: 'Personal Training & Guidance Zone',
-    recommendedSubject: 'Coaching consultation area, technique assessment mirror, or trainer-assisted lifting station.',
+    title: 'Main Workout Floor & Training Layout',
+    recommendedSubject: 'Spacious gym layout with yellow benches, cable stations, and comprehensive equipment.',
     recommendedAspect: '4:3',
     recommendedResolution: '1200 × 900 px',
-    currentAsset: heroImg,
-    altText: 'Personal training and technique coaching consultation floor',
-    targetFilename: 'facility_coaching_space.jpg',
+    currentAsset: gymFloorImg,
+    altText: 'Spacious empty gym interior with yellow benches, racks, blue floor, and mirror walls',
+    targetFilename: 'gym_interior_floor.jpg',
   },
 };

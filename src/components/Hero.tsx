@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Dumbbell, Flame } from 'lucide-react';
 import { GYM_CONFIG } from '../data/gymConfig';
-import heroImg from '../assets/images/hero_gym_strength_1791636335764.jpg';
+import gymFloorImg from '../assets/images/gym_interior_floor_1791724114357.jpg';
 
 interface HeroProps {
   onExploreMembership: () => void;
@@ -93,8 +93,8 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="relative rounded-xl overflow-hidden border border-[#262a36] bg-[#12141a] shadow-2xl group">
               {!imgError ? (
                 <img
-                  src={heroImg}
-                  alt="Barbell strength workout and progressive resistance training"
+                  src={gymFloorImg}
+                  alt="Spacious workout floor with yellow lifting benches and barbell equipment in empty gym"
                   className="w-full h-[380px] sm:h-[460px] lg:h-[500px] object-cover object-center filter contrast-105 group-hover:scale-102 transition-transform duration-700 ease-out"
                   onError={() => setImgError(true)}
                   loading="eager"
