@@ -33,7 +33,7 @@ export const About: React.FC = () => {
               {!imgError ? (
                 <img
                   src={aboutImg}
-                  alt="Serious barbell lifting and training at Xtreme Muscle Gym"
+                  alt="Barbell deadlift training and focused power mechanics"
                   className="w-full h-[360px] sm:h-[440px] object-cover object-center filter contrast-105"
                   onError={() => setImgError(true)}
                   loading="lazy"

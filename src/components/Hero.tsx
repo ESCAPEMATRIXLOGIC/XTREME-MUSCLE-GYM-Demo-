@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({
               {!imgError ? (
                 <img
                   src={heroImg}
-                  alt="Athlete barbell training with intensity at Xtreme Muscle Gym"
+                  alt="Barbell strength workout and progressive resistance training"
                   className="w-full h-[380px] sm:h-[460px] lg:h-[500px] object-cover object-center filter contrast-105 group-hover:scale-102 transition-transform duration-700 ease-out"
                   onError={() => setImgError(true)}
                   loading="eager"

@@ -2,7 +2,11 @@ import React from 'react';
 import { Dumbbell, ArrowUp, MapPin, Phone, Mail, ShieldCheck } from 'lucide-react';
 import { GYM_CONFIG } from '../data/gymConfig';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenPhotoSpecs?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenPhotoSpecs }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -95,8 +99,20 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
-          <div>
-            © {new Date().getFullYear()} XTREME MUSCLE GYM N PHYSICAL FITNESS. All rights reserved.
+          <div className="flex flex-wrap items-center gap-3">
+            <span>© {new Date().getFullYear()} XTREME MUSCLE GYM N PHYSICAL FITNESS. All rights reserved.</span>
+            {onOpenPhotoSpecs && (
+              <>
+                <span className="text-neutral-600">·</span>
+                <button
+                  type="button"
+                  onClick={onOpenPhotoSpecs}
+                  className="hover:text-neutral-200 underline decoration-neutral-700 underline-offset-4 transition-colors cursor-pointer"
+                >
+                  Photography Manifest & Setup
+                </button>
+              </>
+            )}
           </div>
 
           <button

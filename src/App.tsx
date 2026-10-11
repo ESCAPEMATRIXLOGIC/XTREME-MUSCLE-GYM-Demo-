@@ -15,10 +15,12 @@ import { ContactAndLocation } from './components/ContactAndLocation';
 import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
 import { InquiryModal } from './components/InquiryModal';
+import { PhotoSpecsModal } from './components/PhotoSpecsModal';
 import { MembershipPlan } from './data/gymConfig';
 
 export default function App() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
+  const [photoSpecsOpen, setPhotoSpecsOpen] = useState(false);
   const [selectedPlanForModal, setSelectedPlanForModal] = useState('Premium Fitness');
 
   const scrollTo = (id: string) => {
@@ -72,13 +74,19 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onOpenPhotoSpecs={() => setPhotoSpecsOpen(true)} />
 
       {/* Membership & Inquiry Modal */}
       <InquiryModal
         isOpen={inquiryModalOpen}
         onClose={() => setInquiryModalOpen(false)}
         initialPlan={selectedPlanForModal}
+      />
+
+      {/* Facility Photography Specifications Modal */}
+      <PhotoSpecsModal
+        isOpen={photoSpecsOpen}
+        onClose={() => setPhotoSpecsOpen(false)}
       />
     </div>
   );
