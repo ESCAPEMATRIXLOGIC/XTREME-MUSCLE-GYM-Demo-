@@ -17,6 +17,7 @@ import { Footer } from './components/Footer';
 import { InquiryModal } from './components/InquiryModal';
 import { PhotoSpecsModal } from './components/PhotoSpecsModal';
 import { JoinGymSection } from './components/JoinGymSection';
+import { MotivationWall } from './components/MotivationWall';
 import { MembershipPlan } from './data/gymConfig';
 
 export default function App() {
@@ -65,6 +66,9 @@ export default function App() {
         <About />
 
         <Facilities />
+
+        {/* Wall of Discipline: Icons & Mottos (David Goggins "STAY HARD!", Arnold, Ronnie Coleman, Dorian Yates) */}
+        <MotivationWall />
 
         <Trainers onInquire={(subject) => handleOpenInquiry(subject || 'Personal Coaching')} />
 

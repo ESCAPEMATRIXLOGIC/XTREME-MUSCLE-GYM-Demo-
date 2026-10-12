@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Facilities', href: '#facilities' },
+  { label: 'Mindset', href: '#mindset' },
   { label: 'Trainers', href: '#trainers' },
   { label: 'Membership', href: '#membership' },
   { label: 'Gallery', href: '#gallery' },

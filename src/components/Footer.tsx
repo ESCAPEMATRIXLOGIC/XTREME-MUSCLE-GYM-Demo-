@@ -62,6 +62,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPhotoSpecs }) => {
                 <a href="#facilities" className="hover:text-white transition-colors">Facilities & Zones</a>
               </li>
               <li>
+                <a href="#mindset" className="hover:text-white transition-colors">Mindset & Slogans</a>
+              </li>
+              <li>
                 <a href="#trainers" className="hover:text-white transition-colors">Training Team</a>
               </li>
               <li>

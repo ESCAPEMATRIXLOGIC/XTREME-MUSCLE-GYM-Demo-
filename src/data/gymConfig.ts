@@ -9,6 +9,12 @@ import powerCagesImg from '../assets/images/gym_power_cages_1791724158530.jpg';
 import dumbbellRackImg from '../assets/images/gym_dumbbell_racks_1791724144488.jpg';
 import cardioTreadmillsImg from '../assets/images/gym_cardio_treadmills_1791724175270.jpg';
 
+// Champions & Discipline Motivational Posters
+import gogginsImg from '../assets/images/goggins_motivation_1791735710772.jpg';
+import arnoldImg from '../assets/images/arnold_motivation_1791735723912.jpg';
+import ronnieImg from '../assets/images/ronnie_motivation_1791735738866.jpg';
+import dorianImg from '../assets/images/dorian_motivation_1791735750081.jpg';
+
 export interface BusinessConfig {
   brandName: string;
   shortName: string;
@@ -316,3 +322,73 @@ export const FAQ_ITEMS: FaqItem[] = [
     answer: 'Yes, we provide dedicated coaching options including one-on-one personal guidance, technique correction, and customized workout splits tailored to your specific fitness targets.',
   },
 ];
+
+export interface MotivationalSlogan {
+  id: string;
+  name: string;
+  title: string;
+  slogan: string;
+  quote: string;
+  image: string;
+  discipline: string;
+  keyRule: string;
+  badge: string;
+  accentColor: string;
+  highlightWords: string[];
+}
+
+export const MOTIVATIONAL_SLOGANS: MotivationalSlogan[] = [
+  {
+    id: 'slogan-goggins',
+    name: 'David Goggins',
+    title: 'Ultramarathon Athlete & Mental Toughness Icon',
+    slogan: 'STAY HARD!',
+    quote: "Don't stop when you're tired. Stop when you're done. When your mind is telling you you're completely exhausted, you're only at 40 percent of your true capability.",
+    image: gogginsImg,
+    discipline: 'Mental Toughness & Relentless Willpower',
+    keyRule: 'The 40% Rule • Zero Excuses',
+    badge: 'UNBREAKABLE WILL',
+    accentColor: '#dc2626',
+    highlightWords: ['STAY', 'HARD!'],
+  },
+  {
+    id: 'slogan-arnold',
+    name: 'Arnold Schwarzenegger',
+    title: '7x Mr. Olympia & Golden Era Titan',
+    slogan: 'NO PAIN, NO GAIN — CONQUER!',
+    quote: "The mind is the limit. As long as the mind can envision the fact that you can do something, you can do it, as long as you really believe 100 percent.",
+    image: arnoldImg,
+    discipline: 'Relentless Vision & Hypertrophy Focus',
+    keyRule: 'The Last 3 Reps Make The Champion',
+    badge: 'GOLDEN ERA MINDSET',
+    accentColor: '#ef4444',
+    highlightWords: ['NO PAIN', 'NO GAIN', 'CONQUER!'],
+  },
+  {
+    id: 'slogan-ronnie',
+    name: 'Ronnie Coleman',
+    title: '8x Mr. Olympia Heavyweight Legend',
+    slogan: 'YEAH BUDDY! LIGHT WEIGHT BABY!',
+    quote: "Everybody wants to be a bodybuilder, but nobody wants to lift no heavy-ass weights. There is no easy way out. You gotta grind for every single rep.",
+    image: ronnieImg,
+    discipline: 'Heavy Iron Power & Unrivaled Work Ethic',
+    keyRule: 'Ain’t Nothin’ To It But To Do It',
+    badge: 'PURE IRON GRIT',
+    accentColor: '#b91c1c',
+    highlightWords: ['YEAH BUDDY!', 'LIGHT WEIGHT BABY!'],
+  },
+  {
+    id: 'slogan-dorian',
+    name: 'Dorian Yates',
+    title: '6x Mr. Olympia & High-Intensity Pioneer',
+    slogan: 'BLOOD & GUTS!',
+    quote: "Success isn't given. It's earned in the dark, under the iron. One all-out set taken beyond absolute failure will forge what ten easy sets never could.",
+    image: dorianImg,
+    discipline: 'High Intensity Training (HIT) & Heavy Duty',
+    keyRule: 'Total Focus Beyond Absolute Failure',
+    badge: 'THE SHADOW DISCIPLINE',
+    accentColor: '#991b1b',
+    highlightWords: ['BLOOD', '&', 'GUTS!'],
+  },
+];
+
